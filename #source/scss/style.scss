@@ -1,0 +1,111 @@
+@import "null-style.scss";
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding-top: 20px;
+}
+.wrapper {
+	max-width: 1920px;
+}
+.form-reading-test {
+	max-width: 840px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.form__body {
+}
+.test-info {
+	margin-bottom: 20px;
+}
+.test-info__title {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 44px;
+	@media (max-width: 767px) {
+		font-size: 36px;
+	}
+}
+.test-info__text {
+	font-size: 14px;
+	margin-bottom: 10px;
+	line-height: 18px;
+}
+.form__item {
+	margin-bottom: 10px;
+}
+.form__label {
+	display: block;
+	margin-bottom: 10px;
+}
+.form__textarea {
+	width: 100%;
+	overflow-y: auto;
+	height: 50px;
+	max-height: 100px;
+	min-height: 50px;
+	resize: vertical;
+	border: 3px solid #000;
+	border-radius: 5px;
+	padding: 10px;
+}
+.select__speed {
+	max-width: 235px;
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	border: 3px solid #000;
+	border-radius: 10px;
+}
+
+.option {
+	text-align: center;
+}
+.form__button {
+	display: block;
+	max-width: 235px;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	border-radius: 12px;
+	background-color: rgb(0, 220, 0);
+	transition: background-color 0.5s ease 0;
+	&:hover {
+		background-color: rgb(0, 189, 0);
+	}
+}
+.form__button_red {
+	background-color: rgb(252, 85, 85);
+	&:hover {
+		background-color: rgb(253, 45, 45);
+	}
+}
+
+.hidden {
+	display: none;
+}
+.screen-reading {
+	width: 100%;
+	height: 100px;
+	border: 3px solid #000;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.screen-reading__current-word {
+	text-align: center;
+	font-size: 36px;
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+}
+
+.space {
+	height: 100px;
+}
