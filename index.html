@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reading speed test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="form-reading-test">
+			<form action="#" id="form" class="form__body">
+				<div class="test-info">
+					<h1 class=test-info__title>Reading speed test</h1>
+					<p class="test-info__text">Тест призначений виявити швидкість читання. Також можна тренуватись сприймати інформацію на більш великій швидкості, ніж Ви звикли.</p>
+					<p class="test-info__text">Вам потрібно вставити Ваш текст у поле для вводу. Після запуску тесту на екрані для читання в кожний момент часу демонструється одне слово з тексту, слова змінюють одне одного з вказаною Вами швидкістю. Розділювачем тексту на слова є пробіл. Натисніть "СТОП", щоб зупинити тест.</p>
+				</div>
+				<div class="form__item">
+					<label for="text" class="form__label">Вставте Ваш текст:</label>
+					<textarea name="text" id="text" type="text" class="form__textarea"></textarea>
+				</div>
+				<div class="form__item">
+					<label for="speed" class="form__label">Оберіть швидкість читання:</label>
+					<select name="speed" class="select__speed">
+						<option class="option" value="150">150 слів/хв.</option>
+						<option class="option"  value="200">200 слів/хв.</option>
+						<option value="250">250 слів/хв.</option>
+						<option value="300">300 слів/хв.</option>
+						<option value="350">350 слів/хв.</option>
+						<option value="400">400 слів/хв.</option>
+						<option value="450">450 слів/хв.</option>
+						<option value="500">500 слів/хв.</option>
+						<option value="550">550 слів/хв.</option>
+						<option value="600">600 слів/хв.</option>
+					</select>
+				</div>
+				<button id="btn-start" type="submit" class="form__button">Почати</button>
+				<button id="btn-stop" type="reset" class="form__button form__button_red hidden">Стоп / Перезапуск</button>
+				<div class="screen-reading">
+					<p class="screen-reading__current-word">Екран для читання</p>
+				</div>
+			</form>
+		</div>
+		<div class="space"></div>
+	</div>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
